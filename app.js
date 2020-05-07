@@ -1,4 +1,14 @@
-var user_hand = prompt('じゃんけんの手をグー、チョキ、パーから選んでください。');
+$(function(){
+  $('.box1').on('click', function(){
+    $('.box1').addClass('box1-ext');
+  });
+  $('.box1').mouseout(function(){
+     $('.box1').removeClass('box1-ext');
+  });
+});
+
+// jsジャンケン処理
+/* var user_hand = prompt('じゃんけんの手をグー、チョキ、パーから選んでください。');
 
 var js_hand = getJShand();
 
@@ -53,3 +63,4 @@ function winLose(user, js){
 
     return winLoseStr;
 }
+*/
