@@ -5,6 +5,11 @@ $(function() {
     }, 800);
       return false;
   });
+  $('.menu-trigger').on('click', function() {
+    $(this).toggleClass('active');
+    $('#sp-menu').fadeToggle();
+    return false;
+  });
 });
 
 // jsジャンケン処理
